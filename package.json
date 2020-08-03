@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "lite-server": "lite-server",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "webpack": "webpack",
+    "prestart": "npm run webpack"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,12 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-pwa-manifest": "^4.2.0"
   }
 }
